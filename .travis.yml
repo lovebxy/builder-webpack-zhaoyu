@@ -10,10 +10,10 @@ cache:
 node_js: stable
 
 install:
-  - npm install -D
+  - npm install --force -D
   - cd ./test/smoke/template
   # - npm i --legacy-peer-deps
-  - npm install -D
+  - npm install --force -D
   - cd ../../../
 
 script:
