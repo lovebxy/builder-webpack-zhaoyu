@@ -12,9 +12,9 @@ node_js: stable
 install:
   - npm install -D
   - cd ./test/smoke/template
-  - npm i --legacy-peer-deps
+  # - npm i --legacy-peer-deps
   - npm install -D
   - cd ../../../
 
-scripts:
+script:
   - npm test
