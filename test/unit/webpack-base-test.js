@@ -1,7 +1,10 @@
+/* eslint-disable no-undef */
 const assert = require("assert");
+const base = require("../../lib/webpack.base");
+
 describe("webpack.base.js test case", () => {
-  const baseConfig = require("../../lib/webpack.base");
-  console.log(baseConfig);
+  const baseConfig = base;
+
   it("entry", () => {
     assert.equal(
       baseConfig.entry.index,
